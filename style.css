@@ -1,0 +1,135 @@
+:root{
+    --right-padding:4vh;
+    --darkgreen:#596D48;
+    --greybackground:grey;
+
+    font-size: 1.1rem;
+    
+}
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
+p{
+    font-size: 1.2rem;
+}
+html,body{
+    margin:0;
+    padding:0;
+}
+#container{
+    width:100vw;
+    height:100vh;
+    background-color: darkblue;
+    display: flex;
+}
+#background{
+    width:40vw;
+    height: 100vh;
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+}
+#banner{
+    margin-top: 20vh;
+    height: 20vh;
+    background-color: black;
+    opacity: 0.5;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    padding: 2vw;
+    font-family: Norse;
+}
+#banner>img{
+    max-height: 100%;
+}
+#author{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+#author a{
+    color: white;
+}
+#right{
+    width:60vw;
+    height: 100vh;
+    background-color: white;
+}
+#top-msg{
+    padding: var(--right-padding);
+    padding-top: 5vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2>span{
+    font-style: italic;
+}
+#forms{
+    padding: var(--right-padding);
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    gap:5rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width:10vw;
+}
+#forms p{
+    margin: 0;
+    font-weight: bold;
+}
+label{
+    font-size: 0.8rem;
+}
+#bottom{
+    padding: var(--right-padding);
+}
+input{
+    border:1px solid #E5E7EB;
+    border-radius: 4px;
+}
+input:invalid{
+    border: 1px solid red;
+}
+input:focus{
+    appearance: none;
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 5px black;
+}
+#submit{
+    appearance: none;
+    background-color: var(--darkgreen);
+    color: white;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 8px 24px 0px grey;
+}
+#submit:active{
+    transform: translateY(2px);
+}
+#bottom a{
+    appearance: none;
+    color: var(--darkgreen);
+    text-decoration: none;
+}
