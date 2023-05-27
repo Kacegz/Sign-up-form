@@ -106,7 +106,7 @@ input{
     border:1px solid #E5E7EB;
     border-radius: 4px;
 }
-input:invalid{
+.invalid{
     border: 1px solid red;
 }
 input:focus{
@@ -132,4 +132,8 @@ input:focus{
     appearance: none;
     color: var(--darkgreen);
     text-decoration: none;
+}
+#error{
+    color:red;
+    font-size: 0.8rem;
 }

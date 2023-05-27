@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sign-Up-Form</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="container">
@@ -48,12 +49,12 @@
                         <div id="row">
                             <div class="box">
                                 <label for="pass">PASSWORD</label>
-                                <input type="password" name="pass" id="pass"required>
-                                <span id="error"></span>
+                                <input type="password" name="pass" id="pass" class="invalid"required>
+                                <span id="error">* Passwords do not match</span>
                             </div>
                             <div class="box">
                                 <label for="confirm">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm" id="confirm" required>
+                                <input type="password" name="confirm" id="confirm" class="invalid"required>
                             </div>
                         </div>
                     
